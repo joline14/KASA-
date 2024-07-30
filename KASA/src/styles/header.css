@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 68px;
+  display: flex;
+  margin: 30px 50px 30px 50px;
+}
+
+.kasa-logo {
+  height: 45px;
+  width: 100px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  gap: 57px;
+}
+
+.navBar a {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
