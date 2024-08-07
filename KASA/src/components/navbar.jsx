@@ -9,7 +9,7 @@ function NavBar() {
       <NavLink to="/" className="link-underline">
         {navLink1}
       </NavLink>
-      <NavLink to="/about" className="link-underline">
+      <NavLink to="/APropos" className="link-underline">
         {navLink2}
       </NavLink>
     </div>
