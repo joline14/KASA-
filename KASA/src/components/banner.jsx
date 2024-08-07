@@ -1,12 +1,8 @@
-import banner from "../assets/banner.png.png";
-import "../styles/mains.css";
-
-function Banner() {
-  const title = "Chez vous,partout et ailleurs";
+function Banner({ imageSrc, imageClass, title, alt }) {
   return (
     <div className="banner">
-      <img src={banner} alt="image banner" className="banner-img" />
-      <h1 className="banner-title">{title}</h1>
+      <img src={imageSrc} alt={alt} className={imageClass} />
+      {title && <h1>{title}</h1>}
     </div>
   );
 }

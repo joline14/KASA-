@@ -20,7 +20,7 @@
   gap: 57px;
 }
 
-.navBar a {
+.link-underline {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
@@ -30,10 +30,10 @@
   color: black;
 }
 
-.navBar a:active {
+.link-underline:active {
   text-decoration: underline;
 }
 
-.navBar a:hover {
+.link-underline:hover {
   text-decoration: underline;
 }
