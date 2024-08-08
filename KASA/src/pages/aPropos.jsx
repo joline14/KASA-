@@ -1,20 +1,17 @@
-/*import Banner from "../components/banner";
-import BannerImg from "../assets/APropros-imng.png";
-import Collapsis from "../components/Collapsis";
-import aboutData from "../datas/aPropos.json";*/
-
-
-
-
 import Banner from "../components/banner";
 import BannerImg from "../assets/APropos-img.png";
+import ToggleContent from "../components/toggleContent";
+import aProposData from "../datas/aPropos.json";
 
-function AProposKasa() {
-  return (
-    <div>
-      <Banner imageSrc={BannerImg} alt="Photographie de vallée" imageClass="img-apropos" />
-    </div>
-  );
-}
+function AproposKasa() {
+    return (
+        <div>
+            <Banner imageSrc={BannerImg} alt="Photographie de vallée" imageClass="img-about" />
+            <div className="toggle-apropos">
+                <ToggleContent data={aProposData} />
+            </div>
+        </div>
+    );
+};
 
-export default AProposKasa;
+export default AproposKasa;

@@ -1,0 +1,170 @@
+.toggle-apropos {
+    margin: 20px 20px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-apropos {
+        margin: 38px 10% 0 10%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .toggle-apropos {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+     .Toggle-section {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10%;
+    }
+    
+    
+}
+
+.Toggle-section {
+    position: relative;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+ .Toggle {
+    position: relative;
+    background-color: #FF6060;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 20px;
+}
+ .Toggle h3 {
+    color: #fff;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+   .Toggle h3 {
+        padding-left: 15px;
+        font-size: 24px;
+    }
+}
+
+ .arrow {
+    position: absolute;
+    width: 25px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+@media screen and (min-width: 768px) {
+    .arrow {
+        width: 32px;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+ .toggled {
+    transform: rotate(-180deg);
+}
+
+ .Toggle-header {
+    cursor: pointer;
+}
+
+ .Toggle-content {
+    z-index: 2;
+    width: 100%;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
+
+ .Toggle-content.slide-up {
+    animation: slide-up 0.5s ease-in-out both;
+}
+
+.Toggle-content.slide-down {
+    animation: slide-down 0.5s ease-in-out both;
+    max-height: 500px;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Toggle-section p {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .Toggle-section p {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+.Toggle-section p.slide-up-text {
+    animation: slide-up-text 0.5s ease-in-out both;
+}
+
+.Toggle-section p.slide-down-text {
+    animation: slide-down-text 0.5s ease-in-out both;
+}
+
+@keyframes slide-down-text {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up-text {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+}

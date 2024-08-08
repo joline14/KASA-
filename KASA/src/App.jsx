@@ -2,7 +2,7 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
 import HomePage from "./pages/homePage";
-import AProposKasa from "./pages/aPropos";
+import AproposKasa from "./pages/aPropos";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/APropos" element={<AProposKasa />} />
+          <Route path="/APropos" element={<AproposKasa />} />
         </Routes>
         <Footer />
       </BrowserRouter>
