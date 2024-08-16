@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import HomePage from "./pages/homePage";
 import AproposKasa from "./pages/aPropos";
+import ErreurPage from "./pages/ErreurPage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/APropos" element={<AproposKasa />} />
+          <Route path="*" element={<ErreurPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
