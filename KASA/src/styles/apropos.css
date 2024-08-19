@@ -29,12 +29,12 @@
 
 .Toggle-section {
     position: relative;
-
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
  .Toggle {
+    width: 100%;
     position: relative;
     background-color: #FF6060;
     border-radius: 5px;
