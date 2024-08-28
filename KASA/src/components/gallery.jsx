@@ -5,6 +5,7 @@ import Cards from "../components/cards";
 function Gallery() {
   return (
     <section className="gallery">
+      {/* Affichage de la liste des locations */}
       {logements.map((location) => (
         <Cards key={location.id} location={location} />
       ))}
@@ -13,3 +14,4 @@ function Gallery() {
 }
 
 export default Gallery;
+
