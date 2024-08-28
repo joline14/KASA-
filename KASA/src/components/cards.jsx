@@ -1,5 +1,4 @@
 import "../styles/mains.css";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 
@@ -14,7 +13,5 @@ function Cards({ location }) {
   );
 }
 
-Cards.propTypes = {
-  location: PropTypes.object.isRequired,
-};
+
 export default Cards;

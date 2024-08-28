@@ -7,24 +7,29 @@ import Rating from "./rating";
 import Host from "./host";
 import "../styles/location.css"
 
-const findLocation = (id) => {
-    return locations.find((location) => location.id === id);
-}
+const findLocationById = (id) => {
+    for (let i = 0; i < locations.length; i++) {
+        if (locations[i].id === id) {
+            return locations[i];
+        }
+    }
+    return undefined;  // Si aucune location n'est trouvée
+};
 
 function Location(){
     const { id } = useParams();
-    const location = findLocation(id);
-    if (!location) {
-        return <Navigate to="/error" />
-    }
-
+    const location = findLocationById(id);
+    
+    if (!location) return <Navigate to="/error" />;
+    
     const toggleData = [
         { id: 1, title: "Description", text: location.description },
-        { id: 2, title: "Équipements", text: location.equipments }
+        { id: 2, title: "Équipements", text: location.equipments },
     ];
+
     return (
         <section className="location-section">
-            <Slides id={id} />
+            <Slides pictures={location.pictures} title={location.title} />
             <div className="location-info">
                 <h1>{location.title}</h1>
                 <p>{location.location}</p>
@@ -42,3 +47,4 @@ function Location(){
 };
 
 export default Location;
+

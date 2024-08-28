@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 const Tags = ({ tags }) => {
     return (
@@ -8,10 +7,6 @@ const Tags = ({ tags }) => {
             ))}
         </div>
     );
-};
-
-Tags.propTypes = {
-    tags: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Tags;

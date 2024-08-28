@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 
 function Toggle({ isOpen, children }) {
     return ( 
@@ -18,13 +16,5 @@ function Toggle({ isOpen, children }) {
         </div>
     );
 }
-
-Toggle.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    children: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.arrayOf(PropTypes.string)
-    ]).isRequired
-};
 
 export default Toggle;
