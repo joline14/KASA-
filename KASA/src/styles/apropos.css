@@ -84,7 +84,7 @@
  .Toggle-content {
     z-index: 2;
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: white;
     position: relative;
     overflow: hidden;
     transition: max-height 0.3s ease;

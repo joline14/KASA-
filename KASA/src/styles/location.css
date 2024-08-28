@@ -94,11 +94,47 @@
                 color: #e3e3e3;
             }
 
-            .rating {
+            .fa-solid {
                 color: #ff6060;
             }
         }
     }
+
+    .rating {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        width: 50%;
+
+        @media screen and (min-width:768px) {
+            font-size: 20px;
+            position: absolute;
+            bottom: 5px;
+            width: auto;
+        }
+
+        .span {
+            font-size: 24px;
+            /* Taille des étoiles */
+            margin-right: 5px;
+            /* Espace entre les étoiles */
+        }
+        
+    .filled {
+        color: #FF6060;
+        /* Couleur des étoiles remplies */
+    }
+
+    .empty {
+        color: #E3E3E3;
+        /* Couleur des étoiles vides */
+    }
+
+    }
+
+
 
     .location-tags {
         display: flex;
