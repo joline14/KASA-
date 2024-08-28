@@ -11,7 +11,7 @@ function ToggleContent ({ data }) {
     const toggleOpen = (index) => {
         setIsOpen(prevState => ({
             ...prevState,
-            [index]: !prevState[index] // Inverse l'état de l'élément à l'index donné
+            [index]: !prevState[index]
         }));
     };
 

@@ -1,9 +1,9 @@
 function Banner({ imageSrc, imageClass, title, alt }) {
   return (
-    <div className="banner">
+    <section className="banner">
       <img src={imageSrc} alt={alt} className={imageClass} />
       {title && <h1>{title}</h1>}
-    </div>
+    </section>
   );
 }
 

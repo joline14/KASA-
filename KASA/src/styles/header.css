@@ -4,21 +4,10 @@
   width: auto;
   height: 68px;
   display: flex;
-  margin: 30px 50px 30px 50px;
+  margin: 3% 3% 0 3%;
 
-  @media screen and (max-width: 768px) {
-    margin: 20px;
 
-  }
-
-  @media screen and (min-width:768px) {
-    margin: 35px;
-
-  }
-
-  @media screen and (min-width: 1020px) {
-    margin: 45px 100px 50px 100px;
-  }
+ 
   img {
     @media screen and (max-width: 768px) {
       width: 145px;
@@ -36,6 +25,7 @@
     }
   }
 }
+
 
 
 .navBar {

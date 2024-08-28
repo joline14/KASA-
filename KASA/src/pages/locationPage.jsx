@@ -1,10 +1,11 @@
 import Location from "../components/location";
+import Main from "../components/main";
 
 function LocationPage (){
     return (
-        <div>
+        <Main>
             <Location />
-        </div>
+        </Main>
     );
 };
 
