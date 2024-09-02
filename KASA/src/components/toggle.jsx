@@ -1,5 +1,5 @@
 
-function Toggle({ isOpen, children }) {
+function Toggle({ isOpen, children}) {
     return ( 
         // Conteneur qui bascule entre ouvert et fermé selon l'état isOpen
         <div className={`Toggle-content ${isOpen ? 'slide-down' : 'slide-up'}`}>
@@ -19,3 +19,4 @@ function Toggle({ isOpen, children }) {
 }
 
 export default Toggle;
+

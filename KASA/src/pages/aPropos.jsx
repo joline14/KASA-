@@ -9,7 +9,7 @@ function AproposKasa() {
         <Main>
             <Banner imageSrc={BannerImg} alt="Photographie de vallée" imageClass="img-about" />
             <section className="toggle-apropos">
-                <ToggleContent data={aProposData} />
+                <ToggleContent data={aProposData}  width="full"/>
             </section>
         </Main>
     );

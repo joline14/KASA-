@@ -44,7 +44,7 @@ function Location(){
             </div>
              {/* Affichage des sections déroulantes pour la description et les équipements */}
             <div className="toggle-location">
-                <ToggleContent data={toggleData} />
+                <ToggleContent data={toggleData} width="half"/>
             </div>
         </section>
     );
