@@ -1,11 +1,12 @@
 import logo from "../assets/logo.png.jpeg";
 import NavBar from "./navbar";
 import "../styles/header.css";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="logo" />
+      <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
       <NavBar />
     </header>
   );
