@@ -1,21 +1,25 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as filledStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as emptyStar } from '@fortawesome/free-regular-svg-icons';
+import "../styles/location.css"
 
+// Composant qui affiche une note sous forme d'étoiles
+function Rating({ rating }) {
+  const maxRating = 5
+  const stars = []
 
-const Rating = ({ rating }) => {
-    const filledStars = parseInt(rating, 10); // Calcule nombre d'étoiles remplies
-    const emptyStars = 5 - filledStars; // Calcule nombre d'étoiles vides
-  
-    return (
-      <div className='rating'>
-         {/* Affichage des étoiles remplies */}
-        {Array(filledStars).fill().map((_, i) => (
-          <span key={i} style={{ color: '#FF6060' }}>★</span>
-        ))}
-         {/* Affichage des étoiles vides */}
-        {Array(emptyStars).fill().map((_, i) => (
-          <span key={i + filledStars} style={{ color: '#E3E3E3' }}>☆</span>
-        ))}
-      </div>
+    // Boucle pour créer les étoiles en fonction de la note reçue en prop
+  for (let i = 1; i <= maxRating; i++) {
+    stars.push(
+      <FontAwesomeIcon 
+        key={i} 
+        icon={i <= rating ? filledStar : emptyStar} 
+        className={i <= rating ? 'star-icon filled' : 'star-icon empty'} 
+      />
     );
-  };
-  
-export default Rating;
+  }
+  return <div className="rating">{stars}</div>;
+}
+
+export default Rating
+

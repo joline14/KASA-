@@ -1,20 +1,7 @@
 .location-section {
     display: flex;
     flex-direction: column;
-    margin-top: 27px;
     position: relative;
-    margin-right: 20px;
-    margin-left: 20px;
-
-    @media screen and (min-width:768px) {
-        margin-left: 35px;
-        margin-right: 35px;
-    }
-
-    @media screen and (min-width: 1020px) {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 
     .rating-host {
         display: flex;
@@ -45,19 +32,12 @@
 
             .host-name {
                 color: #ff6060;
-                font-size: 12px;
+                font-size: 18px;
                 font-weight: 500;
                 padding-right: 5px;
                 width: 93px;
                 text-align: right;
-
-                @media screen and (min-width:768px) {
-                    font-size: 16px;
-                }
-
-                @media screen and (min-width:1020px) {
-                    font-size: 18px;
-                }
+              
             }
 
             .host-picture {
@@ -89,14 +69,7 @@
                 bottom: 5px;
                 width: auto;
             }
-
-            .score {
-                color: #e3e3e3;
-            }
-
-            .fa-solid {
-                color: #ff6060;
-            }
+    
         }
     }
 
@@ -114,27 +87,16 @@
             bottom: 5px;
             width: auto;
         }
-
-        .span {
-            font-size: 24px;
-            /* Taille des étoiles */
-            margin-right: 5px;
-            /* Espace entre les étoiles */
+        .star-icon.filled {
+            color: #FF6060;
+            /* Couleur des étoiles remplies */
         }
-        
-    .filled {
-        color: #FF6060;
-        /* Couleur des étoiles remplies */
+    
+        .star-icon.empty {
+            color: #E3E3E3;
+            /* Couleur des étoiles vides */
+        }
     }
-
-    .empty {
-        color: #E3E3E3;
-        /* Couleur des étoiles vides */
-    }
-
-    }
-
-
 
     .location-tags {
         display: flex;
