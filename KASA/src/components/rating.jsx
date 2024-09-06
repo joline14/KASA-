@@ -13,11 +13,12 @@ function Rating({ rating }) {
     stars.push(
       <FontAwesomeIcon 
         key={i} 
-        icon={i <= rating ? filledStar : emptyStar} 
-        className={i <= rating ? 'star-icon filled' : 'star-icon empty'} 
+        icon={i <= rating ? filledStar : emptyStar} //Choix entre étoile pleine ou vide selon la note
+        className={i <= rating ? 'star-icon filled' : 'star-icon empty'} // Applique le style CSS approprié
       />
     );
   }
+  // Affiche la série d'étoiles
   return <div className="rating">{stars}</div>;
 }
 

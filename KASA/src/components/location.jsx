@@ -7,16 +7,19 @@ import Rating from "./rating";
 import Host from "./host";
 import "../styles/location.css"
 
+// Fonction pour trouver la location par ID
+
 // Parcourt le tableau des locations pour trouver celle qui correspond à l'ID donné
 const findLocationById = (id) => {
     for (let i = 0; i < locations.length; i++) {
         if (locations[i].id === id) {
-            return locations[i];
+            return locations[i]; // Retourne la location correspondante
         }
     }
     return undefined;  // Si aucune location n'est trouvée
 };
 
+// Composant principal pour afficher les détails de la location
 function Location(){
     const { id } = useParams(); // Récupération de l'ID de l'URL
     const location = findLocationById(id); // Recherche la location par ID

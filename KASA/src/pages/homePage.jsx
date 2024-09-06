@@ -3,6 +3,7 @@ import BannerImg from "../assets/banner.png.png";
 import Gallery from "../components/gallery";
 import Main from "../components/main";
 
+//la page d'accueil
 function HomePage() {
   return (
     <Main>

@@ -1,12 +1,13 @@
 import "../styles/mains.css";
-import logements from "../datas/logements.json";
+import location from "../datas/logements.json";
 import Cards from "../components/cards";
 
+//  Affichage de la liste des locations
 function Gallery() {
   return (
     <section className="gallery">
-      {/* Affichage de la liste des locations */}
-      {logements.map((location) => (
+      {location.map((location) => (
+        // Création d'une carte pour chaque location
         <Cards key={location.id} location={location} />
       ))}
     </section>

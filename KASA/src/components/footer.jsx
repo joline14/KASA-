@@ -1,6 +1,7 @@
 import logoFooter from "../assets/logo-footer.png.svg";
 import "../styles/footer.css";
 
+// Composant pour le pied de page
 function Footer() {
   const desciption = "© 2020 Kasa. All rights reserved";
   return (
